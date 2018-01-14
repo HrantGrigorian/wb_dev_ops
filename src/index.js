@@ -8,10 +8,10 @@ function createElement() {
     button.innerHTML = "Click on me";
     button.onclick = printFoo;
 
-    element.innerHTML = "Hello Webpack!";
+    rootElement.innerHTML = "Hello Webpack!";
 
-    element.appendChild(button);
-    return element;
+    rootElement.appendChild(button);
+    return rootElement;
 }
 
 document.body.appendChild(createElement());
