@@ -12,7 +12,10 @@ module.exports = {
             title: 'Webpack DevOPS',
             template: './src/assets/main.html'
         }),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.LoaderOptionsPlugin({
+            debug: true
+        })
     ],
 
     output: {
